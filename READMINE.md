@@ -38,7 +38,40 @@ web#dev
 Note: Common tasks found in turbo.json file - build, lint, check-types, dev
 
 
-## 4. 
+## 4. Learn about Turborepo using. turbo.json file
+
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",                                        ------> (Optional) Custom Command line interface with two tabs 
+  "tasks": {
+    "build": { 
+      "dependsOn": ["^build"],                        ------> Run build script of dependecies first 
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],         ------> If these values change, then application rebuilds
+      "outputs": [".next/**", "!.next/cache/**"],     ------> Cachin inclusions and exclusions
+      "env": ["DATABASE_URL"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:deploy": {
+      "cache": false
+    }
+  }
+}
 
 
 
