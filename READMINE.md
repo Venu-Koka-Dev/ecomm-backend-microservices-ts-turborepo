@@ -24,6 +24,9 @@ README.md
 .npmrc
 
 3. Install turbo
-pnpm add turbo --global
+pnpm add turbo -w
+turbo dev
+
+4. 
 
 
