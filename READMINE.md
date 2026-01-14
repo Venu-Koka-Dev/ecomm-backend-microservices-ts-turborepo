@@ -31,10 +31,46 @@ Note: We can run those two applications individually by going to their root proj
 ecomm(folder)>pnpm add turbo -w
 ecomm(folder)>turbo dev
 
-Tasks running (as per turbo.json file):
+Tasks running (as per turbo.json file): turborepo goes to all package.json file of all the applications & packages to run their tasks
 docs#dev
 web#dev
 
+Note: Common tasks found in turbo.json file - build, lint, check-types, dev
+
+
 ## 4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
