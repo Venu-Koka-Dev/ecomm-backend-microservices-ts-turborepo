@@ -74,6 +74,36 @@ Note: Common tasks found in turbo.json file - build, lint, check-types, dev
 }
 
 
+## 5. (Optional) Git command to download a branch of a remote repo
+git clone --single-branch -b <completed> <https://github.com/safak/e-commerce-ui.git>
+
+
+## 6. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
