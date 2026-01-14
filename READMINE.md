@@ -6,12 +6,12 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Setup
-1. Create a folder: ecomm
+## 1. Create a folder: ecomm
    
-2. Create a Turborepo project
+## 2. Create a Turborepo with two example NextJS projects by default: docs, web
 pnpm dlx create-turbo@latest
 
-Where: . -> Package manager: pnpm -> Installs with teo example projects in it
+Where: . -> Package manager: pnpm -> Installs with two example NextJS projects in it
 
 Folder Structure of a Turborepo project:
 apps/              -> Contains applications like frontend, backend, services etc
@@ -23,10 +23,18 @@ README.md
 .gitignore
 .npmrc
 
-3. Install turbo
-pnpm add turbo -w
-turbo dev
+Note: We can run those two applications individually by going to their root project directories and using the command: pnpm run dev
+      (or) 
+      Alternatively we can run both at once using turbo (below)
 
-4. 
+## 3. Install turbo
+ecomm(folder)>pnpm add turbo -w
+ecomm(folder)>turbo dev
+
+Tasks running (as per turbo.json file):
+docs#dev
+web#dev
+
+## 4. 
 
 
