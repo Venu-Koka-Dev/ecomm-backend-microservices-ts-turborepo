@@ -78,9 +78,11 @@ Note: Common tasks found in turbo.json file - build, lint, check-types, dev
 git clone --single-branch -b <completed> <https://github.com/safak/e-commerce-ui.git>
 
 
-## 6. 
+## 6. Install dependencies of individual apps
+ecomm/apps/client>pnpm install
+ecomm/apps/admin>pnpm install
 
-
+## 7.  
 
 
 
