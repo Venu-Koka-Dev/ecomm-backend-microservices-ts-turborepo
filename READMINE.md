@@ -82,7 +82,11 @@ git clone --single-branch -b <completed> <https://github.com/safak/e-commerce-ui
 ecomm/apps/client>pnpm install
 ecomm/apps/admin>pnpm install
 
-## 7.  
+## 7.  Environment variables of product-service (using ExpessJS & Postgres)
+product-service/.env
+
+
+## 8. 
 
 
 
