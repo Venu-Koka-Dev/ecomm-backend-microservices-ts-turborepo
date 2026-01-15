@@ -6,7 +6,7 @@
 5. Fastify - web framework like ExpressJS
 6. HonoJS - web framework like ExpressJS
 7. Requestly - a light weight API testing client similar to Postman
-8. 
+8. Clerk - for authentication/authorization
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Setup
@@ -90,11 +90,16 @@ ecomm/apps/admin>pnpm install
 product-service/.env
 
 
-## 8. 
+## 8.  Environment variables of order-service (using Fastify)
+order-service/.env
 
 
+## 9.  Environment variables of payment-service (using HonoJS)
+payment-service/.env
 
 
+# 10. Create an account in Clerk - using Gmail sbt.web.developer@gmail.com
+Create application: meredus
 
 
 
