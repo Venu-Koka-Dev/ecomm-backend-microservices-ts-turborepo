@@ -1,8 +1,12 @@
 # Tech Stack
 1. Monorepo - NX, Turborepo (maintained by Vercel)
 2. NextJS
-3. Node-Express
-4. TypeScript
+3. TypeScript
+4. Node-Express - a web framework
+5. Fastify - web framework like ExpressJS
+6. HonoJS - web framework like ExpressJS
+7. Requestly - a light weight API testing client similar to Postman
+8. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Setup
