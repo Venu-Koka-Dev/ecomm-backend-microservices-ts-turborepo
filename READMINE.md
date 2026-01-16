@@ -97,9 +97,14 @@ CLERK_SECRET_KEY=sk_test_kYhb9adpaFuOp2wyPcKOLniXHnZalzHWX1RZudtqqa
 ## 8.  Environment variables of order-service (using Fastify)
 order-service/.env
 
+CLERK_PUBLISHABLE_KEY=pk_test_aG9wZWZ1bC1taWRnZS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_kYhb9adpaFuOp2wyPcKOLniXHnZalzHWX1RZudtqqa
+
 
 ## 9.  Environment variables of payment-service (using HonoJS)
 payment-service/.env
+
+
 
 ## 10.  Environment variables of client (using NextJS)
 client/.env
