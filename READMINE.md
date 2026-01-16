@@ -89,6 +89,10 @@ ecomm/apps/admin>pnpm install
 ## 7.  Environment variables of product-service (using ExpessJS & Postgres)
 product-service/.env
 
+CLERK_PUBLISHABLE_KEY=pk_test_aG9wZWZ1bC1taWRnZS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_kYhb9adpaFuOp2wyPcKOLniXHnZalzHWX1RZudtqqa
+
+
 
 ## 8.  Environment variables of order-service (using Fastify)
 order-service/.env
@@ -97,8 +101,15 @@ order-service/.env
 ## 9.  Environment variables of payment-service (using HonoJS)
 payment-service/.env
 
+## 10.  Environment variables of client (using NextJS)
+client/.env
 
-# 10. Create an account in Clerk - using Gmail sbt.web.developer@gmail.com
+
+CLERK_PUBLISHABLE_KEY=pk_test_aG9wZWZ1bC1taWRnZS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_kYhb9adpaFuOp2wyPcKOLniXHnZalzHWX1RZudtqqa
+
+
+# 11. Create an account in Clerk - using Gmail sbt.web.developer@gmail.com
 Create application: meredus
 
 
