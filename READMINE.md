@@ -7,6 +7,9 @@
 6. HonoJS - web framework like ExpressJS
 7. Requestly - a light weight API testing client similar to Postman
 8. Clerk - for authentication/authorization
+9. Postgres - for products database
+10. Prisma - ORM for Postgres
+11. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Setup
