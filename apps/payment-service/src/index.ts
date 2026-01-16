@@ -24,6 +24,7 @@ app.get("/health", (c) => {
 app.get("/test", shouldBeUser, (c) => {  
   return c.json({
     message: 'Payment service is Authenticated!',
+    userId: c.get("userId")
   });
 });
 
