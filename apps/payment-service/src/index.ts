@@ -19,6 +19,20 @@ app.get("/health", (c) => {
   });
 });
 
+app.get("/test", (c) => {
+  const { userId } = getAuth(c);
+
+  if (!auth?.userId) {
+    return c.json({
+      message: 'You are not logged in.',
+    });
+  }
+
+  return c.json({
+    message: 'Payment service is Authenticated!',
+  });
+});
+
 app.route("/sessions", sessionRoute);
 app.route("/webhooks", webhookRoute);
 
