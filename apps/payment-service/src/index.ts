@@ -6,6 +6,8 @@ import { cors } from "hono/cors";
 import { consumer, producer } from "./utils/kafka.js";
 import { runKafkaSubscriptions } from "./utils/subscriptions.js";
 import webhookRoute from "./routes/webhooks.route.js";
+import { shouldBeUser } from "./middleware/authMiddleware.js";
+
 
 const app = new Hono();
 app.use("*", clerkMiddleware());
@@ -19,15 +21,7 @@ app.get("/health", (c) => {
   });
 });
 
-app.get("/test", (c) => {
-  const { userId } = getAuth(c);
-
-  if (!auth?.userId) {
-    return c.json({
-      message: 'You are not logged in.',
-    });
-  }
-
+app.get("/test", shouldBeUser, (c) => {  
   return c.json({
     message: 'Payment service is Authenticated!',
   });
