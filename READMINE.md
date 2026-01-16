@@ -104,9 +104,13 @@ payment-service/.env
 ## 10.  Environment variables of client (using NextJS)
 client/.env
 
-
-CLERK_PUBLISHABLE_KEY=pk_test_aG9wZWZ1bC1taWRnZS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_aG9wZWZ1bC1taWRnZS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
 CLERK_SECRET_KEY=sk_test_kYhb9adpaFuOp2wyPcKOLniXHnZalzHWX1RZudtqqa
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
 
 
 # 11. Create an account in Clerk - using Gmail sbt.web.developer@gmail.com
